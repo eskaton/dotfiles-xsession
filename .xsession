@@ -8,4 +8,4 @@ if [[ -x ~/.xlock.d/xlock.sh ]]; then
    daemon xautolock -time 15 -locker ~/.xlock.d/xlock.sh
 fi
 
-exec ssh-agent /usr/local/bin/xmonad
+exec ssh-agent $(command -v xmonad)
